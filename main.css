@@ -1,0 +1,763 @@
+
+body{
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+/***** DIV Control *******************************************************************************************************/
+.full-width{
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+.half-width{
+	width: 600px;
+	margin: 0 auto;
+	float: left;
+
+}
+
+.third-width{
+	width: 400px;
+	margin: 0 auto;
+	float: left;
+	
+}
+
+.divider{
+	height: 100px;
+	width: 1200px;
+	background-color:  #cad8de;
+	clear: both;
+	margin: auto;
+	opacity: 0;
+}
+
+
+
+/******* Site Background *******************************************************************************************************/
+
+body{
+background-color: #cad8de;
+background-image: url("..//img/pattern9.png");
+background-attachment: fixed;
+}
+
+
+
+
+
+/***** Animations **************************************************************************************************************/
+
+
+	/**Fox Logo *******************************************/
+
+	@keyframes floating{
+
+					0% {
+						  -webkit-filter: drop-shadow(-2px 10px 5px #222);
+				 		 filter: drop-shadow(-2px 10px 5px #222);
+						transform: translatey(-5px);
+					}
+					50% {
+						 	 -webkit-filter: drop-shadow(-1px 5px 2px #222 );
+				  			filter: drop-shadow(-1px 5px 2px #222);
+						transform: translatey(0px);
+					}
+					100% {
+						  -webkit-filter: drop-shadow(-2px 10px 5px #222);
+				 		 filter: drop-shadow(-2px 10px 5px #222);
+						transform: translatey(-5px);
+					}
+
+	}
+
+
+
+	/** Site Name ***************************************/
+				#logo:link, #logo:visited{
+							position: relative;
+							margin-left: 790px;
+							margin-top: -25px;
+							display: inline-block;
+							font-family: NasalizationRg-Regular;
+							font-size: 50px;
+							font-weight: bold;
+							color: white;
+							text-decoration: none;
+							transform: rotate(17.5deg);
+							transition: all 0.5s ease-out;
+							z-index: 300;
+
+				}
+
+
+				#logo:hover, #logo:active{
+						  color:rgb(0,246,237);
+					      transition: all 0.2s ease-out;
+					      text-shadow: 1px 0px 10px rgb(0,246,237);
+					      transform: rotate(17.5deg) scale(1.05);
+					      z-index: 300;
+				}
+
+
+
+
+	/** Nav Buttons ***************************************/
+					header nav ul li a:link, a:visited{
+							color:white;
+							text-decoration: none;
+							padding: 3px 8px 3px 8px;
+						    height: 20px;
+						    width: 50px;
+						    border: 2px solid white;
+						    border-radius: 2px 15px 15px 15px;
+						  	margin-right: 10px;
+						    transition: all 0.5s ease-out;
+					 
+					}
+
+					header nav ul li a:hover, a:active{
+							  color: rgb(0,246,237);
+							  border: 2px solid rgb(0,246,237);
+							  border-radius: 2px 15px 2px 15px;
+						      transition: all 0.2s ease-out;
+						      text-shadow: 1px 0px 10px rgb(0,246,237);
+						      box-shadow: 2px 3px;
+
+					}
+
+	/** Hero Text Animation **/
+
+					@keyframes slidein-h1 {
+					from{
+					margin-left: 400px;
+					opacity: 0;
+					}
+
+					to {
+					opacity: 1;
+					margin-left: 250px;
+					}
+
+					}
+
+					@keyframes slidein-h3 {
+					from{
+					margin-left: 400px;
+					opacity: 0;
+					}
+
+					to {
+					opacity: 1;
+					margin-left: 325px;
+					}
+
+					}
+
+
+
+
+	/** Service Icons **/
+			.serv-overlay{
+				transition: all .4s ease-in-out;
+				opacity: 0;
+			}
+
+			.serv-overlay:hover, .serv-overlay:active{
+				opacity: 0.98;
+				transform: scale(1.05);
+			}
+
+	
+
+
+	/** Design and Integration Section Thumbnails **/
+			.thumbnail { 
+				transition: all .2s ease-in-out;
+				border: 7px solid #364156; 
+			}
+			.thumbnail:hover, .thumbnail:active { 
+				transform: scale(1.05); 
+				border: 14px solid #00f6ed;
+			}
+
+
+	/** Contact Div **/
+
+			.contact-hover { 
+				transition: all .2s ease-in-out;
+				border-radius: 30px 30px 0px 0px;
+			}
+			.contact-hover:hover, .contact-hover:active { 
+				transform: translateY(-50px);
+				border-radius: 30px 30px 30px 30px;
+				-webkit-filter: drop-shadow(10px 15px 10px #222);
+			 		 filter: drop-shadow(10px 15px 10px #222);
+			}
+
+
+			.contact-icon { 
+				transition: all .2s ease-in-out;
+					-webkit-filter: drop-shadow(5px 5px 5px #222);
+			 		filter: drop-shadow(5px 5px 5px #222);
+
+			}
+			.contact-icon:hover, .contact-icon:active { 
+				transform: scale(1.1);
+			 		-webkit-filter: drop-shadow(10px 15px 10px #222);
+			 		 filter: drop-shadow(10px 15px 10px #222);
+			}
+
+
+
+
+
+/******* Section Styling ************************************************************************************************************/
+
+
+
+
+
+/***** Header ******************************************************/
+
+
+header{
+	position: relative;
+	z-index: 100;
+	height: 800px;
+	min-width: 1200px;
+	max-width: 1200px;
+	margin: auto;
+	background-image: url("../img/contact-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+
+}
+
+#fox-logo{
+	position: absolute;
+	opacity: 0.35;
+	z-index: 200;
+	height: 790px;
+	max-width: 1200px;
+	margin-top: -200px;
+		overflow: hidden;
+
+}
+
+#fox-logo img{
+	float: left;
+	height: auto;
+	width:auto;
+	max-height:775px;
+animation: floating 2.5s ease-in-out infinite;
+animation-direction: alternate;
+
+}
+
+
+
+
+header nav{
+	position: relative;
+	height: 210px;
+	min-width: 1200px;
+	max-width: 1200px;
+	margin:auto;
+	margin-top: -15px;
+	background-image: url("../img/NavBar.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index:250;
+	 -webkit-filter: drop-shadow(10px 15px 10px #222);
+ 		 filter: drop-shadow(10px 15px 10px #222);
+	}
+
+
+header nav ul li{
+	position: relative;
+	font-family: NasalizationRg-Regular;
+	display:inline-block;
+	text-align: center;
+  	margin-top: 10px;
+}
+
+
+
+/***** Hero **********************************************************/
+
+
+#hero-container {
+	position: relative;
+	overflow: hidden;
+	z-index: 400;
+}
+
+#hero{
+	max-width: 1200px;
+	min-width: 1200px;
+	margin: auto;
+}
+#hero h1 {
+  font-size: 36px;
+  font-family: NasalizationRg-Regular;
+  color: rgb(54, 65, 86);
+  line-height: 1.2;
+  text-align: left;
+  width: 583px;
+  height: 116px;
+  margin-left: 250px;
+  margin-top: 155px;
+  font-variant: small-caps;
+  z-index: 6;
+animation-duration: 2s;
+animation-name: slidein-h1;
+
+}
+
+
+#hero h3{
+  font-size: 16px;
+  font-family: "Varela Round";
+  font-weight: 700;
+  color: rgb(54, 65, 86);
+  line-height: 1.2;
+  text-align: center;
+  width: 275px;
+  height: 85px;
+  margin-left: 325px;
+  margin-top: 0px;
+   font-variant: small-caps;
+  z-index: 7;
+ animation-duration: 2s;
+animation-name: slidein-h3;
+
+}
+
+
+
+
+/***** Services  ***********************************************************/
+
+
+#services{
+	text-align: center;
+		margin: 0 auto;
+		clear: both;
+		min-width: 1200px;
+		max-width: 1200px;
+		position: relative;
+	z-index: 100;
+	border-radius: 30px 30px 30px 30px;
+-webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+	}
+
+
+#serv-img{
+	background-image: url("../img/designed-background.jpg");
+	background-attachment: fixed;
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 30px 30px 0px 0px;
+	height: 400px;
+   overflow: hidden;
+
+}
+
+ @media screen and (max-device-width: 1200px) {
+   #serv-img {
+   	background-image: url("../img/designed-background.jpg");
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
+
+   }
+   #services p{
+   	opacity: 0.98;
+   }
+
+ }
+
+#serv-text{
+	background-color: rgb(54, 65, 86);
+	height: 400px;
+	border-radius: 0px 0px 30px 30px;
+
+}
+
+
+#serv-img h1{
+	float: left;
+	margin:150px auto;
+	padding: 10px;
+	width: 1100px;
+	background-color: white;
+	color: rgb(54, 65, 86);
+	font-family: NasalizationRg-Regular;
+	font-weight:bold;
+	font-size: 55px;
+	border-radius: 2px 20px 20px 2px;
+
+}
+
+
+
+#services img{
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 5px;
+}
+
+
+#services p{
+	background-color: #364156;
+	padding: 25px;
+	padding-top: 45px;
+	padding-bottom: 0px;
+	margin-left: 50px;
+	margin-top: -305px;
+	font-size: 18px;
+  font-family: "Varela Round";
+  font-weight: normal;
+  color: white;
+  line-height: 1.75;
+  font-variant: small-caps;
+  }
+
+
+  .Left {
+  border-width: 10px;
+  border-color: rgb(0, 246, 237);
+  border-style: solid;
+  border-radius: 20px 80px 80px 80px;
+  background-color: #364156;
+  width: 230px;
+  height: 230px;
+}
+
+.Center {
+  border-width: 10px;
+  border-color: rgb(0, 246, 237);
+  border-style: solid;
+  border-radius: 20px 20px 80px 80px;
+  background-color: #364156;
+  width: 230px;
+  height: 230px;
+  z-index: 79;
+}
+
+
+
+.Right {
+  border-width: 10px;
+  border-color: rgb(0, 246, 237);
+  border-style: solid;
+  border-radius: 80px 20px 80px 80px;
+  background-color: #364156;
+  width: 230px;
+  height: 230px;}
+
+
+
+
+/***** Design *************************************************************/
+
+#design{
+	text-align: center;
+	clear: both;
+	margin: 0 auto;
+	min-width: 1200px;
+	max-width: 1200px;
+	position: relative;
+	z-index: 100;
+		border-radius: 30px 30px 30px 30px;
+-webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+}
+
+
+#design-img{
+	border-radius: 30px 30px 0px 0px;
+	background-image: url("../img/logodesign.jpg");
+	background-attachment: fixed;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+ 
+ @media screen and (max-device-width: 1200px) {
+   #design-img {
+   	background-image: url("../img/logodesign.jpg");
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
+   }
+ }
+
+
+#design-img h1{
+	float: right;
+	margin:150px auto;
+	padding: 10px;
+	width: 800px;
+	background-color: white;
+	color: rgb(54, 65, 86);
+	font-family: NasalizationRg-Regular;
+	font-weight:bold;
+	font-size: 55px;
+	border-radius: 20px 2px 2px 20px;
+}
+
+
+#design-text{
+	height: 400px;
+	background-color: #cad8de;
+	border-radius: 0px 0px 30px 30px;
+}
+
+
+#design-text p{
+	
+	text-align: center;
+	padding: 20px;
+	margin-top: 60px;
+	margin-left: 20px;
+	font-size: 18px;
+	width: 470px;
+  font-family: "Varela Round";
+ font-weight: 700;
+  color: rgb(54, 65, 86);
+  line-height: 1.75;
+  font-variant: small-caps;
+  clear: both;
+}
+
+#design-text img{
+	background-color: white;
+	margin-top: 50px;
+	height: 275px;
+	margin-left: 100px;
+	border-radius: 2px 20px 2px 20px;
+
+}
+
+
+
+/***** Integration ******************************************************/
+#integration{
+	text-align: center;
+	margin: 0 auto;
+	clear: both;
+	min-width: 1200px;
+	max-width: 1200px;
+	position: relative;
+	z-index: 100;
+		border-radius: 30px 30px 30px 30px;
+-webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+
+}
+
+#integration h1{
+	float: left;
+	margin:150px auto;
+	padding: 10px;
+	width: 1100px;
+	background-color: white;
+	color: rgb(54, 65, 86);
+	font-family: NasalizationRg-Regular;
+	font-weight:bold;
+	font-size: 55px;
+	border-radius: 2px 20px 20px 2px;
+
+}
+
+#integ-img{
+	border-radius: 30px 30px 0px 0px;
+	background-image: url("../img/integration.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
+ @media screen and (max-device-width: 1200px) {
+   #integ-img {
+   	background-image: url("../img/integration.jpg");
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
+   }
+ }
+
+
+#integ-text{
+	border-radius: 0px 0px 30px 30px;
+	background-color: white;
+	height: 400px;
+}
+
+#integ-text p{
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 150px;
+	font-size: 18px;
+	width: 400px;
+  font-family: "Varela Round";
+ font-weight: 700;
+ font-variant: small-caps;
+  color: rgb(62, 78, 84);
+  line-height: 1.75;
+  clear: both;
+}
+
+
+#integ-text img{
+	background-color: white;
+	margin-top: 50px;
+	height: 275px;
+	margin-right: 100px;
+	border-radius: 2px 20px 2px 20px;
+
+}
+
+
+
+
+
+
+/***** Contact ********************************************************/
+
+footer{
+	min-width: 1200px;
+	max-width: 1200px;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+	z-index: 100;
+}
+
+
+#contact{
+	text-align: center;
+	clear: both;
+	min-width: 1200px;
+	max-width: 1200px;
+
+
+}
+
+#contact .full-width{
+	height: 500px;
+	overflow: hidden;
+-webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+	
+}
+
+
+#contact-img{
+	padding-top: 60px;
+	background-color: #00f6ed;
+	height: 500px;
+}
+
+#contact-portrait{
+	float: left;
+	height: 175px;
+	margin-top: 100px;
+	margin-left: 50px;
+	max-width: auto;
+	border-radius: 100px;
+}
+
+#info{
+	width: 500px;
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+	font-family: "Varela Round";
+	font-weight: ;
+	background-color: #364156;
+	padding: 1px;
+	border-radius: 0px 20px 100px 0px;
+}
+
+#info h2{
+	font-size: 24px;
+	font-weight: 700;
+	font-variant: small-caps;
+	margin-right: 30px;
+}
+
+#info h3{
+	font-variant: small-caps;
+	font-size: 20px;
+	font-weight: 500;
+		margin-right: 30px;
+}
+
+#info h4{
+	font-size: 14px;
+ font-weight: 400;
+ 	margin-right: 30px;
+}
+
+
+#contact-img ul{
+	float: left;
+	margin-top: 10px;
+}
+
+#contact-img ul li{
+display: inline-block;
+}
+
+#contact-img h6{
+	float: left;
+	margin-left: 30px;
+}
+
+
+
+
+
+#contact-text{
+	background-color: #00f6ed;
+	height: 500px;
+
+}
+
+
+#contact-text h1{
+	float: right;
+	margin:30px auto;
+	padding: 10px;
+	width: 800px;
+	background-color: white;
+	color: rgb(54, 65, 86);
+	font-family: NasalizationRg-Regular;
+	font-weight:bold;
+	font-size: 55px;
+	border-radius: 20px 2px 2px 20px;
+}
+
